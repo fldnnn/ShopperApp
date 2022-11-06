@@ -13,6 +13,14 @@
 		311FC3912915742B0044ACF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311FC38F2915742B0044ACF4 /* Main.storyboard */; };
 		311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3922915742E0044ACF4 /* Assets.xcassets */; };
 		311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3942915742E0044ACF4 /* LaunchScreen.storyboard */; };
+		311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3A02915AD170044ACF4 /* OnboardingContract.swift */; };
+		311FC3A72915AD170044ACF4 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3A12915AD170044ACF4 /* OnboardingPresenter.swift */; };
+		311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3A22915AD170044ACF4 /* OnboardingRouter.swift */; };
+		311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3A32915AD170044ACF4 /* OnboardingViewController.swift */; };
+		311FC3AA2915AD170044ACF4 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3A42915AD170044ACF4 /* OnboardingInteractor.swift */; };
+		311FC3AE2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3AC2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift */; };
+		311FC3AF2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3AD2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib */; };
+		311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3B12916B2570044ACF4 /* OnboardingEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		311FC3922915742E0044ACF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311FC3952915742E0044ACF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311FC3972915742E0044ACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311FC3A02915AD170044ACF4 /* OnboardingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContract.swift; sourceTree = "<group>"; };
+		311FC3A12915AD170044ACF4 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		311FC3A22915AD170044ACF4 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		311FC3A32915AD170044ACF4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		311FC3A42915AD170044ACF4 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		311FC3AC2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		311FC3AD2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		311FC3B12916B2570044ACF4 /* OnboardingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		311FC3882915742B0044ACF4 /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				311FC39D2915A4A70044ACF4 /* Modules */,
 				311FC3892915742B0044ACF4 /* AppDelegate.swift */,
 				311FC38B2915742B0044ACF4 /* SceneDelegate.swift */,
 				311FC38D2915742B0044ACF4 /* ViewController.swift */,
@@ -65,6 +82,53 @@
 				311FC3972915742E0044ACF4 /* Info.plist */,
 			);
 			path = Shopper;
+			sourceTree = "<group>";
+		};
+		311FC39D2915A4A70044ACF4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				311FC39E2915A4B00044ACF4 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		311FC39E2915A4B00044ACF4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3B02916B23E0044ACF4 /* OnboardingEntity */,
+				311FC3B32916B7370044ACF4 /* OnboardingCollectionViewAdapter */,
+				311FC3A02915AD170044ACF4 /* OnboardingContract.swift */,
+				311FC3A12915AD170044ACF4 /* OnboardingPresenter.swift */,
+				311FC3A22915AD170044ACF4 /* OnboardingRouter.swift */,
+				311FC3A32915AD170044ACF4 /* OnboardingViewController.swift */,
+				311FC3A42915AD170044ACF4 /* OnboardingInteractor.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		311FC3AB2916A57C0044ACF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3AC2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift */,
+				311FC3AD2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		311FC3B02916B23E0044ACF4 /* OnboardingEntity */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3B12916B2570044ACF4 /* OnboardingEntity.swift */,
+			);
+			path = OnboardingEntity;
+			sourceTree = "<group>";
+		};
+		311FC3B32916B7370044ACF4 /* OnboardingCollectionViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3AB2916A57C0044ACF4 /* Cell */,
+			);
+			path = OnboardingCollectionViewAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +192,7 @@
 				311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */,
 				311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */,
 				311FC3912915742B0044ACF4 /* Main.storyboard in Resources */,
+				311FC3AF2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
+				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
 				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
+				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
+				311FC3AA2915AD170044ACF4 /* OnboardingInteractor.swift in Sources */,
+				311FC3A72915AD170044ACF4 /* OnboardingPresenter.swift in Sources */,
+				311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */,
 				311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */,
 				311FC38C2915742B0044ACF4 /* SceneDelegate.swift in Sources */,
+				311FC3AE2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
