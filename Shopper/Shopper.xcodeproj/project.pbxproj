@@ -31,6 +31,12 @@
 		316F0AE8291860CB0082B376 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0AE7291860CB0082B376 /* FirebaseFirestore */; };
 		316F0AEA291862500082B376 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 316F0AE9291862500082B376 /* GoogleService-Info.plist */; };
 		316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AEC291862FE0082B376 /* UIButton+Ext.swift */; };
+		316F0AF0291867F90082B376 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AEF291867F90082B376 /* SignUpViewController.swift */; };
+		316F0AF22918680A0082B376 /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF12918680A0082B376 /* SignUpContract.swift */; };
+		316F0AF4291868230082B376 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF3291868230082B376 /* SignUpInteractor.swift */; };
+		316F0AF6291868250082B376 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF5291868240082B376 /* SignUpPresenter.swift */; };
+		316F0AF8291868260082B376 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF7291868260082B376 /* SignUpRouter.swift */; };
+		316F0AFA291869610082B376 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF9291869610082B376 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +63,12 @@
 		316F0ADD291858320082B376 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		316F0AE9291862500082B376 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		316F0AEC291862FE0082B376 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		316F0AEF291867F90082B376 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		316F0AF12918680A0082B376 /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
+		316F0AF3291868230082B376 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		316F0AF5291868240082B376 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		316F0AF7291868260082B376 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		316F0AF9291869610082B376 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,7 @@
 		316F0AD2291853130082B376 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				316F0AEE291867E50082B376 /* SignUp */,
 				316F0ADF291858D30082B376 /* SignIn */,
 			);
 			path = Login;
@@ -170,8 +183,21 @@
 			isa = PBXGroup;
 			children = (
 				316F0AEC291862FE0082B376 /* UIButton+Ext.swift */,
+				316F0AF9291869610082B376 /* String+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		316F0AEE291867E50082B376 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				316F0AEF291867F90082B376 /* SignUpViewController.swift */,
+				316F0AF3291868230082B376 /* SignUpInteractor.swift */,
+				316F0AF5291868240082B376 /* SignUpPresenter.swift */,
+				316F0AF7291868260082B376 /* SignUpRouter.swift */,
+				316F0AF12918680A0082B376 /* SignUpContract.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,14 +285,20 @@
 				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
 				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
 				316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */,
+				316F0AF4291868230082B376 /* SignUpInteractor.swift in Sources */,
 				316F0ADA2918582A0082B376 /* SignInRouter.swift in Sources */,
+				316F0AF0291867F90082B376 /* SignUpViewController.swift in Sources */,
 				316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */,
 				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
 				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
+				316F0AFA291869610082B376 /* String+Ext.swift in Sources */,
+				316F0AF22918680A0082B376 /* SignUpContract.swift in Sources */,
 				316F0AD6291858010082B376 /* SignInContract.swift in Sources */,
 				311FC3AA2915AD170044ACF4 /* OnboardingInteractor.swift in Sources */,
+				316F0AF8291868260082B376 /* SignUpRouter.swift in Sources */,
 				311FC3A72915AD170044ACF4 /* OnboardingPresenter.swift in Sources */,
 				311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */,
+				316F0AF6291868250082B376 /* SignUpPresenter.swift in Sources */,
 				316F0ADE291858320082B376 /* SignInPresenter.swift in Sources */,
 				311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */,
 				311FC38C2915742B0044ACF4 /* SceneDelegate.swift in Sources */,
