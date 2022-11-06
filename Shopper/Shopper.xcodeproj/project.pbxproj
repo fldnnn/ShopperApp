@@ -21,6 +21,16 @@
 		311FC3AE2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3AC2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift */; };
 		311FC3AF2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3AD2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib */; };
 		311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3B12916B2570044ACF4 /* OnboardingEntity.swift */; };
+		316F0AD4291857690082B376 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AD3291857690082B376 /* SignInViewController.swift */; };
+		316F0AD6291858010082B376 /* SignInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AD5291858010082B376 /* SignInContract.swift */; };
+		316F0ADA2918582A0082B376 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AD92918582A0082B376 /* SignInRouter.swift */; };
+		316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0ADB2918582C0082B376 /* SignInInteractor.swift */; };
+		316F0ADE291858320082B376 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0ADD291858320082B376 /* SignInPresenter.swift */; };
+		316F0AE4291860CB0082B376 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0AE3291860CB0082B376 /* FirebaseAuth */; };
+		316F0AE6291860CB0082B376 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0AE5291860CB0082B376 /* FirebaseDatabase */; };
+		316F0AE8291860CB0082B376 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0AE7291860CB0082B376 /* FirebaseFirestore */; };
+		316F0AEA291862500082B376 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 316F0AE9291862500082B376 /* GoogleService-Info.plist */; };
+		316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AEC291862FE0082B376 /* UIButton+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,13 @@
 		311FC3AC2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		311FC3AD2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		311FC3B12916B2570044ACF4 /* OnboardingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntity.swift; sourceTree = "<group>"; };
+		316F0AD3291857690082B376 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		316F0AD5291858010082B376 /* SignInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInContract.swift; sourceTree = "<group>"; };
+		316F0AD92918582A0082B376 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		316F0ADB2918582C0082B376 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		316F0ADD291858320082B376 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		316F0AE9291862500082B376 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		316F0AEC291862FE0082B376 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316F0AE6291860CB0082B376 /* FirebaseDatabase in Frameworks */,
+				316F0AE4291860CB0082B376 /* FirebaseAuth in Frameworks */,
+				316F0AE8291860CB0082B376 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 		311FC3882915742B0044ACF4 /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				316F0AEB291862E50082B376 /* Extensions */,
 				311FC39D2915A4A70044ACF4 /* Modules */,
 				311FC3892915742B0044ACF4 /* AppDelegate.swift */,
 				311FC38B2915742B0044ACF4 /* SceneDelegate.swift */,
@@ -80,6 +101,7 @@
 				311FC3922915742E0044ACF4 /* Assets.xcassets */,
 				311FC3942915742E0044ACF4 /* LaunchScreen.storyboard */,
 				311FC3972915742E0044ACF4 /* Info.plist */,
+				316F0AE9291862500082B376 /* GoogleService-Info.plist */,
 			);
 			path = Shopper;
 			sourceTree = "<group>";
@@ -87,6 +109,7 @@
 		311FC39D2915A4A70044ACF4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				316F0AD2291853130082B376 /* Login */,
 				311FC39E2915A4B00044ACF4 /* Onboarding */,
 			);
 			path = Modules;
@@ -95,8 +118,8 @@
 		311FC39E2915A4B00044ACF4 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				311FC3AB2916A57C0044ACF4 /* Cell */,
 				311FC3B02916B23E0044ACF4 /* OnboardingEntity */,
-				311FC3B32916B7370044ACF4 /* OnboardingCollectionViewAdapter */,
 				311FC3A02915AD170044ACF4 /* OnboardingContract.swift */,
 				311FC3A12915AD170044ACF4 /* OnboardingPresenter.swift */,
 				311FC3A22915AD170044ACF4 /* OnboardingRouter.swift */,
@@ -123,12 +146,32 @@
 			path = OnboardingEntity;
 			sourceTree = "<group>";
 		};
-		311FC3B32916B7370044ACF4 /* OnboardingCollectionViewAdapter */ = {
+		316F0AD2291853130082B376 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				311FC3AB2916A57C0044ACF4 /* Cell */,
+				316F0ADF291858D30082B376 /* SignIn */,
 			);
-			path = OnboardingCollectionViewAdapter;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		316F0ADF291858D30082B376 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				316F0AD3291857690082B376 /* SignInViewController.swift */,
+				316F0AD92918582A0082B376 /* SignInRouter.swift */,
+				316F0ADB2918582C0082B376 /* SignInInteractor.swift */,
+				316F0ADD291858320082B376 /* SignInPresenter.swift */,
+				316F0AD5291858010082B376 /* SignInContract.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		316F0AEB291862E50082B376 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				316F0AEC291862FE0082B376 /* UIButton+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +190,11 @@
 			dependencies = (
 			);
 			name = Shopper;
+			packageProductDependencies = (
+				316F0AE3291860CB0082B376 /* FirebaseAuth */,
+				316F0AE5291860CB0082B376 /* FirebaseDatabase */,
+				316F0AE7291860CB0082B376 /* FirebaseFirestore */,
+			);
 			productName = Shopper;
 			productReference = 311FC3862915742B0044ACF4 /* Shopper.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 311FC37D2915742B0044ACF4;
+			packageReferences = (
+				316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 311FC3872915742B0044ACF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,6 +242,7 @@
 			files = (
 				311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */,
 				311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */,
+				316F0AEA291862500082B376 /* GoogleService-Info.plist in Resources */,
 				311FC3912915742B0044ACF4 /* Main.storyboard in Resources */,
 				311FC3AF2916A59C0044ACF4 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
@@ -203,13 +255,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316F0AD4291857690082B376 /* SignInViewController.swift in Sources */,
 				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
 				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
+				316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */,
+				316F0ADA2918582A0082B376 /* SignInRouter.swift in Sources */,
+				316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */,
 				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
 				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
+				316F0AD6291858010082B376 /* SignInContract.swift in Sources */,
 				311FC3AA2915AD170044ACF4 /* OnboardingInteractor.swift in Sources */,
 				311FC3A72915AD170044ACF4 /* OnboardingPresenter.swift in Sources */,
 				311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */,
+				316F0ADE291858320082B376 /* SignInPresenter.swift in Sources */,
 				311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */,
 				311FC38C2915742B0044ACF4 /* SceneDelegate.swift in Sources */,
 				311FC3AE2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -432,6 +490,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		316F0AE3291860CB0082B376 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		316F0AE5291860CB0082B376 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		316F0AE7291860CB0082B376 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 311FC37E2915742B0044ACF4 /* Project object */;
 }

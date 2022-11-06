@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>123399418713-80ao0cjhba1fb7pfkhele7ki7h5ml9at.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.123399418713-80ao0cjhba1fb7pfkhele7ki7h5ml9at</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBr8IF7KuZIOiRYewWet1g1aloEX6JpA8w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>123399418713</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fuldenonan.Shopper</string>
+	<key>PROJECT_ID</key>
+	<string>shopper-f48ae</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shopper-f48ae.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:123399418713:ios:8526b196237604f8705248</string>
+</dict>
+</plist>
