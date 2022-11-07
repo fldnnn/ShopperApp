@@ -327,6 +327,7 @@
                         <outlet property="productCollectionView" destination="ARE-FU-Gbg" id="XCq-Qk-Ldg"/>
                         <outlet property="productSearchBar" destination="Xhe-XK-tW5" id="rdO-o4-5fk"/>
                         <outlet property="userNameLabel" destination="8tR-om-yYa" id="4gd-J5-CVT"/>
+                        <segue destination="pLL-eM-nrF" kind="show" identifier="toDetail" id="PbS-fr-njb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23K-Fu-SbK" sceneMemberID="firstResponder"/>
@@ -358,6 +359,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3wk-ac-GfG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cyp-sr-Tsz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -369,6 +371,95 @@
             </objects>
             <point key="canvasLocation" x="2937.68115942029" y="75"/>
         </scene>
+        <!--  -->
+        <scene sceneID="FAv-Zc-78j">
+            <objects>
+                <viewController id="pLL-eM-nrF" customClass="DetailProductViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFw-FH-byx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-af-pKt">
+                                <rect key="frame" x="47" y="187.5" width="320" height="521"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmg-G9-a4W">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="OTe-GN-vru"/>
+                                            <constraint firstAttribute="width" constant="320" id="cF8-is-7x4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-La-7RC">
+                                        <rect key="frame" x="139.5" y="296" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMT-6E-iSM">
+                                        <rect key="frame" x="139.5" y="332.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-9n-9ff">
+                                        <rect key="frame" x="139.5" y="369" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="455-83-Sj0">
+                                        <rect key="frame" x="156.5" y="405.5" width="7.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mk9-Mc-bh1">
+                                        <rect key="frame" x="113" y="442" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="stepperButton:" destination="pLL-eM-nrF" eventType="valueChanged" id="BVA-Bs-ySX"/>
+                                        </connections>
+                                    </stepper>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyU-Xj-tYc">
+                                        <rect key="frame" x="102" y="490" width="116.5" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ADD TO CART">
+                                            <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCart:" destination="pLL-eM-nrF" eventType="touchUpInside" id="wAx-sP-Egd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R8s-Gq-Fqe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j2v-af-pKt" firstAttribute="centerY" secondItem="IFw-FH-byx" secondAttribute="centerY" id="7kG-GJ-n1t"/>
+                            <constraint firstItem="j2v-af-pKt" firstAttribute="centerX" secondItem="IFw-FH-byx" secondAttribute="centerX" id="UVf-fg-Xoa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="  " id="JI8-Vy-NCo">
+                        <barButtonItem key="backBarButtonItem" title="  " systemItem="cancel" id="gjU-nF-sSX">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addToCartOutlet" destination="WyU-Xj-tYc" id="ft2-KW-kLv"/>
+                        <outlet property="descLabel" destination="Vkm-9n-9ff" id="kf2-RF-hKm"/>
+                        <outlet property="detailImageView" destination="gmg-G9-a4W" id="Uxf-Fi-EJR"/>
+                        <outlet property="nameLabel" destination="IMT-6E-iSM" id="0Ze-sN-ahj"/>
+                        <outlet property="priceLabel" destination="hRc-La-7RC" id="Yc0-Ma-whE"/>
+                        <outlet property="stepper" destination="Mk9-Mc-bh1" id="qgu-ck-eLs"/>
+                        <outlet property="stepperValueLabel" destination="455-83-Sj0" id="x9B-ai-kJi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmh-s2-avR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5600" y="75"/>
+        </scene>
     </scenes>
     <resources>
         <image name="trolley" width="512" height="512"/>
@@ -377,6 +468,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

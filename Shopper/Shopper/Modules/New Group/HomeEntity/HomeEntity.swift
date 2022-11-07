@@ -13,11 +13,11 @@ struct Products: Codable {
 
 struct Product: Codable {
     let id: Int?
-    let title: String?
-    let price: Double?
+    var title: String?
+    var price: Double?
     let description: String?
     let category: String?
-    let image: String?
+    var image: String?
     let rating: Rating?
 }
 

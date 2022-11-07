@@ -73,12 +73,12 @@ class HomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "toDetail" {
-//            if let product = sender as? Product {
-//                let detailVC = segue.destination as! DetailFoodViewController
-//                detailVC.food = food
-//            }
-//        }
+        if segue.identifier == "toDetail" {
+            if let product = sender as? Product {
+                let detailVC = segue.destination as! DetailProductViewController
+                detailVC.product = product
+            }
+        }
     }
 }
 
@@ -121,7 +121,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let product = productList[indexPath.row]
-        //performSegue(withIdentifier: "toDetail", sender: food)
+        performSegue(withIdentifier: "toDetail", sender: product)
         collectionView.deselectItem(at: indexPath, animated: true)
     }
 }
