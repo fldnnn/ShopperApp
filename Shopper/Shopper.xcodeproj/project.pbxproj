@@ -37,6 +37,18 @@
 		316F0AF6291868250082B376 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF5291868240082B376 /* SignUpPresenter.swift */; };
 		316F0AF8291868260082B376 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF7291868260082B376 /* SignUpRouter.swift */; };
 		316F0AFA291869610082B376 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AF9291869610082B376 /* String+Ext.swift */; };
+		316F0AFD29186DAD0082B376 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AFC29186DAD0082B376 /* HomeViewController.swift */; };
+		316F0B0029186DC30082B376 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0AFF29186DC30082B376 /* HomeInteractor.swift */; };
+		316F0B0229186DCB0082B376 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B0129186DCB0082B376 /* HomePresenter.swift */; };
+		316F0B0429186DCD0082B376 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B0329186DCC0082B376 /* HomeContract.swift */; };
+		316F0B0629186DCF0082B376 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B0529186DCF0082B376 /* HomeRouter.swift */; };
+		316F0B0929186E150082B376 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B0829186E150082B376 /* HomeEntity.swift */; };
+		316F0B0D29186EF10082B376 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B0B29186EF10082B376 /* HomeCollectionViewCell.swift */; };
+		316F0B0E29186EF10082B376 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316F0B0C29186EF10082B376 /* HomeCollectionViewCell.xib */; };
+		316F0B11291873640082B376 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0B10291873640082B376 /* Alamofire */; };
+		316F0B16291879AB0082B376 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B15291879AB0082B376 /* UIView+Ext.swift */; };
+		316F0B18291879D20082B376 /* UICollViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B17291879D20082B376 /* UICollViewCell+Ext.swift */; };
+		316F0B1B29187AF20082B376 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 316F0B1A29187AF20082B376 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +81,16 @@
 		316F0AF5291868240082B376 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		316F0AF7291868260082B376 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		316F0AF9291869610082B376 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		316F0AFC29186DAD0082B376 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		316F0AFF29186DC30082B376 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		316F0B0129186DCB0082B376 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		316F0B0329186DCC0082B376 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		316F0B0529186DCF0082B376 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		316F0B0829186E150082B376 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		316F0B0B29186EF10082B376 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		316F0B0C29186EF10082B376 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		316F0B15291879AB0082B376 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		316F0B17291879D20082B376 /* UICollViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollViewCell+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +99,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				316F0AE6291860CB0082B376 /* FirebaseDatabase in Frameworks */,
+				316F0B11291873640082B376 /* Alamofire in Frameworks */,
 				316F0AE4291860CB0082B376 /* FirebaseAuth in Frameworks */,
 				316F0AE8291860CB0082B376 /* FirebaseFirestore in Frameworks */,
+				316F0B1B29187AF20082B376 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +145,7 @@
 		311FC39D2915A4A70044ACF4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				316F0AFB29186D610082B376 /* Home */,
 				316F0AD2291853130082B376 /* Login */,
 				311FC39E2915A4B00044ACF4 /* Onboarding */,
 			);
@@ -184,6 +209,8 @@
 			children = (
 				316F0AEC291862FE0082B376 /* UIButton+Ext.swift */,
 				316F0AF9291869610082B376 /* String+Ext.swift */,
+				316F0B15291879AB0082B376 /* UIView+Ext.swift */,
+				316F0B17291879D20082B376 /* UICollViewCell+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,6 +225,38 @@
 				316F0AF12918680A0082B376 /* SignUpContract.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		316F0AFB29186D610082B376 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				316F0B0A29186ED50082B376 /* Cell */,
+				316F0B0729186E000082B376 /* HomeEntity */,
+				316F0AFC29186DAD0082B376 /* HomeViewController.swift */,
+				316F0B0129186DCB0082B376 /* HomePresenter.swift */,
+				316F0B0329186DCC0082B376 /* HomeContract.swift */,
+				316F0B0529186DCF0082B376 /* HomeRouter.swift */,
+				316F0AFF29186DC30082B376 /* HomeInteractor.swift */,
+			);
+			name = Home;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		316F0B0729186E000082B376 /* HomeEntity */ = {
+			isa = PBXGroup;
+			children = (
+				316F0B0829186E150082B376 /* HomeEntity.swift */,
+			);
+			path = HomeEntity;
+			sourceTree = "<group>";
+		};
+		316F0B0A29186ED50082B376 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				316F0B0B29186EF10082B376 /* HomeCollectionViewCell.swift */,
+				316F0B0C29186EF10082B376 /* HomeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +279,8 @@
 				316F0AE3291860CB0082B376 /* FirebaseAuth */,
 				316F0AE5291860CB0082B376 /* FirebaseDatabase */,
 				316F0AE7291860CB0082B376 /* FirebaseFirestore */,
+				316F0B10291873640082B376 /* Alamofire */,
+				316F0B1A29187AF20082B376 /* Kingfisher */,
 			);
 			productName = Shopper;
 			productReference = 311FC3862915742B0044ACF4 /* Shopper.app */;
@@ -251,6 +312,8 @@
 			mainGroup = 311FC37D2915742B0044ACF4;
 			packageReferences = (
 				316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				316F0B0F291873630082B376 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				316F0B1929187AF20082B376 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 311FC3872915742B0044ACF4 /* Products */;
 			projectDirPath = "";
@@ -267,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */,
+				316F0B0E29186EF10082B376 /* HomeCollectionViewCell.xib in Resources */,
 				311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */,
 				316F0AEA291862500082B376 /* GoogleService-Info.plist in Resources */,
 				311FC3912915742B0044ACF4 /* Main.storyboard in Resources */,
@@ -281,28 +345,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316F0B0D29186EF10082B376 /* HomeCollectionViewCell.swift in Sources */,
 				316F0AD4291857690082B376 /* SignInViewController.swift in Sources */,
+				316F0B16291879AB0082B376 /* UIView+Ext.swift in Sources */,
 				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
 				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
+				316F0B0629186DCF0082B376 /* HomeRouter.swift in Sources */,
+				316F0B0029186DC30082B376 /* HomeInteractor.swift in Sources */,
 				316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */,
 				316F0AF4291868230082B376 /* SignUpInteractor.swift in Sources */,
 				316F0ADA2918582A0082B376 /* SignInRouter.swift in Sources */,
+				316F0AFD29186DAD0082B376 /* HomeViewController.swift in Sources */,
+				316F0B0929186E150082B376 /* HomeEntity.swift in Sources */,
 				316F0AF0291867F90082B376 /* SignUpViewController.swift in Sources */,
 				316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */,
 				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
 				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
 				316F0AFA291869610082B376 /* String+Ext.swift in Sources */,
+				316F0B0429186DCD0082B376 /* HomeContract.swift in Sources */,
 				316F0AF22918680A0082B376 /* SignUpContract.swift in Sources */,
 				316F0AD6291858010082B376 /* SignInContract.swift in Sources */,
 				311FC3AA2915AD170044ACF4 /* OnboardingInteractor.swift in Sources */,
 				316F0AF8291868260082B376 /* SignUpRouter.swift in Sources */,
 				311FC3A72915AD170044ACF4 /* OnboardingPresenter.swift in Sources */,
 				311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */,
+				316F0B0229186DCB0082B376 /* HomePresenter.swift in Sources */,
 				316F0AF6291868250082B376 /* SignUpPresenter.swift in Sources */,
 				316F0ADE291858320082B376 /* SignInPresenter.swift in Sources */,
 				311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */,
 				311FC38C2915742B0044ACF4 /* SceneDelegate.swift in Sources */,
 				311FC3AE2916A59C0044ACF4 /* OnboardingCollectionViewCell.swift in Sources */,
+				316F0B18291879D20082B376 /* UICollViewCell+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +605,22 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		316F0B0F291873630082B376 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		316F0B1929187AF20082B376 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -549,6 +638,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 316F0AE2291860CB0082B376 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		316F0B10291873640082B376 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316F0B0F291873630082B376 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		316F0B1A29187AF20082B376 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316F0B1929187AF20082B376 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
