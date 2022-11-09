@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
         Auth.auth().addStateDidChangeListener { auth, user in
             if (user != nil) {
                 UserDefaults.standard.set(true, forKey: "status")
-                //Switcher.updateRootVC()
+                Switcher.updateRootVC()
             }
         }
     }

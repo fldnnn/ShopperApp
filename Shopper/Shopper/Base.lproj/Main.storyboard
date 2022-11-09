@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3wk-ac-GfG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zdR-Kb-mCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -11,7 +11,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="USu-Fw-8lN">
             <objects>
-                <viewController storyboardIdentifier="Onboarding" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zdR-Kb-mCL" customClass="OnboardingViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboarding" id="zdR-Kb-mCL" customClass="OnboardingViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QmN-cy-jVv"/>
                         <viewControllerLayoutGuide type="bottom" id="p82-DC-aDh"/>
@@ -356,7 +356,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="BMk-Ce-T4L">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3wk-ac-GfG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="3wk-ac-GfG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cyp-sr-Tsz">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -366,11 +366,12 @@
                     <connections>
                         <segue destination="piT-1z-myV" kind="relationship" relationship="viewControllers" id="l89-y8-TlI"/>
                         <segue destination="Inz-ng-v8r" kind="relationship" relationship="viewControllers" id="qjl-rf-UQe"/>
+                        <segue destination="TnS-hu-xhL" kind="relationship" relationship="viewControllers" id="OkY-ZV-MEJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPE-UA-7Ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937.68115942029" y="75"/>
+            <point key="canvasLocation" x="2938" y="75"/>
         </scene>
         <!--Cart-->
         <scene sceneID="adI-5O-7J4">
@@ -547,10 +548,48 @@
             </objects>
             <point key="canvasLocation" x="5598.5507246376819" y="75"/>
         </scene>
+        <!--Profil-->
+        <scene sceneID="IUN-TC-2fu">
+            <objects>
+                <viewController id="TnS-hu-xhL" customClass="ProfileViewController" customModule="FoodBreak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dqd-1h-GHd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB5-JE-o0c">
+                                <rect key="frame" x="172.5" y="432.5" width="69.5" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButton:" destination="TnS-hu-xhL" eventType="touchUpInside" id="r9m-lY-tVc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aFe-TN-1ih"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RB5-JE-o0c" firstAttribute="centerX" secondItem="dqd-1h-GHd" secondAttribute="centerX" id="EIO-ae-LPH"/>
+                            <constraint firstItem="RB5-JE-o0c" firstAttribute="centerY" secondItem="dqd-1h-GHd" secondAttribute="centerY" id="MFM-6J-luq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="person" catalog="system" selectedImage="person" id="Y8E-Si-3IT"/>
+                    <connections>
+                        <outlet property="logOutOutlet" destination="RB5-JE-o0c" id="uo2-AT-4fE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAT-tg-r7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3761" y="880"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="trolley" width="512" height="512"/>
         <systemColor name="labelColor">

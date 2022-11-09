@@ -15,7 +15,6 @@ class OnboardingPresenter: Onboarding.ViewToPresenter {
     
     func viewDidLoad() {
         interactor?.getItems()
-        print("here presnter")
     }
 }
 

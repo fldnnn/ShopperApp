@@ -61,8 +61,8 @@ class HomeViewController: UIViewController {
         tabBarController?.tabBar.standardAppearance = appearance
         tabBarController?.tabBar.scrollEdgeAppearance = appearance
         
-//        let username = UserDefaults.standard.value(forKey: "username")
-//        userNameLabel.text = "Merhaba \(username ?? "")!"
+        let username = UserDefaults.standard.value(forKey: "username")
+        userNameLabel.text = "Hello, \(username ?? "")!"
     }
     
     private func changeColor(itemAppearance: UITabBarItemAppearance) {

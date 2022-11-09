@@ -18,11 +18,9 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
                 do {
                     let response = try JSONDecoder().decode([Product].self, from: data)
                     print(response)
-                    //if let list = response {
                         DispatchQueue.main.async {
                             self.homePresenter?.didDataFecth(with: response)
                         }
-                    //}
                 }catch{
                     print(error.localizedDescription)
                 }
@@ -36,9 +34,6 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
             if let data = response.data {
                 do {
                     let response = try JSONDecoder().decode([Product].self, from: data)
-                    print(data)
-                    //if let list = response as? [Product] {
-                        print(response)
                         var searchedProductList = [Product]()
                         for product in response {
                             if product.title!.lowercased().contains(searchTerm.lowercased()) {
@@ -48,7 +43,6 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
                         DispatchQueue.main.async {
                             self.homePresenter?.didDataFecth(with: searchedProductList)
                         }
-                    //}
                 }catch{
                     print(error.localizedDescription)
                 }

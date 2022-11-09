@@ -12,8 +12,8 @@ class CartInteractor: PresenterToInteractorCartProtocol {
     var presenter: InteractorToPresenterCartProtocol?
     var products = [Detail]()
     let db = Firestore.firestore()
-    let userId = "PMLuvtlWxJVAsP29TnZqt75c76e2"
-    
+    let userId = Auth.auth().currentUser?.uid
+ 
     func getAllCartItems() {
         db.collection("\(userId)").getDocuments() { [weak self] (snapshot, error) in
             if error != nil {

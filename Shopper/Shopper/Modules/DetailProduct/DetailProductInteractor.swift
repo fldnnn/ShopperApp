@@ -11,10 +11,10 @@ import Firebase
 class DetailProductInteractor: PresenterToInteractorDetailProtocol {
     let db = Firestore.firestore()
     var products = [Detail]()
-    let userId = "PMLuvtlWxJVAsP29TnZqt75c76e2"
+    let userId = Auth.auth().currentUser?.uid
     
     func addToBasket(product: Detail, username: String) {
-        //guard let userId = Auth.auth().currentUser?.uid else { return }
+        guard let userId = Auth.auth().currentUser?.uid else { return }
         var sameProduct: Detail?
 
         getProductsBasket(username: username) {

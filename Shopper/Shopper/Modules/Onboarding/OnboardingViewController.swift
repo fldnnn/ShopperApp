@@ -46,7 +46,10 @@ class OnboardingViewController: UIViewController {
 
     @IBAction func onNextButtonPressed(_ sender: Any) {
         if currentPage == collectionViewItemList.count - 1 {
-            print("here")
+            let viewController = storyboard?.instantiateViewController(identifier: "LoginVC")
+            viewController!.modalPresentationStyle = .fullScreen
+            viewController!.modalTransitionStyle = .flipHorizontal
+            present(viewController!, animated: true, completion: nil)
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)

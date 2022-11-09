@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC3892915742B0044ACF4 /* AppDelegate.swift */; };
 		311FC38C2915742B0044ACF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC38B2915742B0044ACF4 /* SceneDelegate.swift */; };
-		311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311FC38D2915742B0044ACF4 /* ViewController.swift */; };
 		311FC3912915742B0044ACF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311FC38F2915742B0044ACF4 /* Main.storyboard */; };
 		311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3922915742E0044ACF4 /* Assets.xcassets */; };
 		311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311FC3942915742E0044ACF4 /* LaunchScreen.storyboard */; };
@@ -62,13 +61,14 @@
 		31DF46AD291B72B900683128 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46AC291B72B900683128 /* CartViewController.swift */; };
 		31DF46B1291B72E000683128 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46AF291B72E000683128 /* CartTableViewCell.swift */; };
 		31DF46B2291B72E000683128 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DF46B0291B72E000683128 /* CartTableViewCell.xib */; };
+		31DF46B5291BB99300683128 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46B4291BB99300683128 /* ProfileViewController.swift */; };
+		31DF46B8291BBB2400683128 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46B7291BBB2400683128 /* Switcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		311FC3862915742B0044ACF4 /* Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311FC3892915742B0044ACF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		311FC38B2915742B0044ACF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		311FC38D2915742B0044ACF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		311FC3902915742B0044ACF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		311FC3922915742E0044ACF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311FC3952915742E0044ACF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,6 +117,8 @@
 		31DF46AC291B72B900683128 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		31DF46AF291B72E000683128 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		31DF46B0291B72E000683128 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		31DF46B4291BB99300683128 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		31DF46B7291BBB2400683128 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,16 +156,14 @@
 		311FC3882915742B0044ACF4 /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				31DF46B9291BBB5A00683128 /* App */,
+				31DF46B6291BBAE900683128 /* RootView */,
 				316F0AEB291862E50082B376 /* Extensions */,
 				311FC39D2915A4A70044ACF4 /* Modules */,
-				311FC3892915742B0044ACF4 /* AppDelegate.swift */,
-				311FC38B2915742B0044ACF4 /* SceneDelegate.swift */,
-				311FC38D2915742B0044ACF4 /* ViewController.swift */,
+				31DF46BA291BC17900683128 /* Resources */,
+				31DF46BB291BC80300683128 /* Plist */,
 				311FC38F2915742B0044ACF4 /* Main.storyboard */,
-				311FC3922915742E0044ACF4 /* Assets.xcassets */,
 				311FC3942915742E0044ACF4 /* LaunchScreen.storyboard */,
-				311FC3972915742E0044ACF4 /* Info.plist */,
-				316F0AE9291862500082B376 /* GoogleService-Info.plist */,
 			);
 			path = Shopper;
 			sourceTree = "<group>";
@@ -171,6 +171,7 @@
 		311FC39D2915A4A70044ACF4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				31DF46B3291BB93200683128 /* Profile */,
 				31DF46A1291B691000683128 /* Cart */,
 				316F0B1C291889280082B376 /* DetailProduct */,
 				316F0AFB29186D610082B376 /* Home */,
@@ -330,6 +331,48 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		31DF46B3291BB93200683128 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				31DF46B4291BB99300683128 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		31DF46B6291BBAE900683128 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				31DF46B7291BBB2400683128 /* Switcher.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		31DF46B9291BBB5A00683128 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3892915742B0044ACF4 /* AppDelegate.swift */,
+				311FC38B2915742B0044ACF4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		31DF46BA291BC17900683128 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3922915742E0044ACF4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		31DF46BB291BC80300683128 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				311FC3972915742E0044ACF4 /* Info.plist */,
+				316F0AE9291862500082B376 /* GoogleService-Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -422,7 +465,9 @@
 				316F0B0D29186EF10082B376 /* HomeCollectionViewCell.swift in Sources */,
 				316F0AD4291857690082B376 /* SignInViewController.swift in Sources */,
 				316F0B16291879AB0082B376 /* UIView+Ext.swift in Sources */,
+				31DF46B8291BBB2400683128 /* Switcher.swift in Sources */,
 				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
+				31DF46B5291BB99300683128 /* ProfileViewController.swift in Sources */,
 				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
 				31DF46B1291B72E000683128 /* CartTableViewCell.swift in Sources */,
 				316F0B0629186DCF0082B376 /* HomeRouter.swift in Sources */,
@@ -438,7 +483,6 @@
 				316F0B1E29188BAE0082B376 /* DetailProductViewController.swift in Sources */,
 				316F0B2029188E2D0082B376 /* DetailProductContract.swift in Sources */,
 				316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */,
-				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
 				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
 				31DF46A3291B725100683128 /* CartContract.swift in Sources */,
 				316F0AFA291869610082B376 /* String+Ext.swift in Sources */,
@@ -610,7 +654,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KRCW97NRKQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Shopper/Info.plist;
+				INFOPLIST_FILE = Shopper/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -638,7 +682,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KRCW97NRKQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Shopper/Info.plist;
+				INFOPLIST_FILE = Shopper/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
