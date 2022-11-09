@@ -16,4 +16,17 @@ extension UIView {
         layer.shadowOpacity = 0.2
         layer.masksToBounds = true
     }
+    
+    func giveElevation() {
+        let shadowSize : CGFloat = 0.5
+        let shadowPath = UIBezierPath(rect: CGRect(x: -shadowSize / 2,
+                                                   y: -shadowSize / 2,
+                                                   width: self.frame.size.width,
+                                                   height: self.frame.size.height + shadowSize))
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor(named: "mainLightColor")?.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        self.layer.shadowOpacity = 0.1
+        self.layer.shadowPath = shadowPath.cgPath
+        }
 }

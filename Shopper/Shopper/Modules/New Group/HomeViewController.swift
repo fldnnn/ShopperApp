@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
         
         productSearchBar.delegate = self
         navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemPink]
         
        productCollectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
     }
@@ -65,8 +66,8 @@ class HomeViewController: UIViewController {
     }
     
     private func changeColor(itemAppearance: UITabBarItemAppearance) {
-        itemAppearance.selected.iconColor = .black
-        itemAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.black]
+        itemAppearance.selected.iconColor = .systemPink
+        itemAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.systemPink]
         
         itemAppearance.normal.iconColor = .lightGray
         itemAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.lightGray]

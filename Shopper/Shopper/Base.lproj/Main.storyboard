@@ -275,7 +275,7 @@
             </objects>
             <point key="canvasLocation" x="1772" y="75"/>
         </scene>
-        <!-- -->
+        <!--Shopper-->
         <scene sceneID="7ts-w4-WT4">
             <objects>
                 <viewController id="aHO-hp-GLW" customClass="HomeViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
@@ -320,7 +320,7 @@
                             <constraint firstItem="Xhe-XK-tW5" firstAttribute="trailing" secondItem="t5C-cx-LQy" secondAttribute="trailing" id="zlR-Zu-7EL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title=" " id="q7c-PB-Iv9">
+                    <navigationItem key="navigationItem" title="Shopper" id="q7c-PB-Iv9">
                         <barButtonItem key="backBarButtonItem" title=" " id="hKh-ZN-UoC"/>
                     </navigationItem>
                     <connections>
@@ -334,11 +334,11 @@
             </objects>
             <point key="canvasLocation" x="4757.971014492754" y="75"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="P5P-b6-kyi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="piT-1z-myV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yiK-0i-Ddh"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="yiK-0i-Ddh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qVc-dw-auA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -365,11 +365,83 @@
                     </tabBar>
                     <connections>
                         <segue destination="piT-1z-myV" kind="relationship" relationship="viewControllers" id="l89-y8-TlI"/>
+                        <segue destination="Inz-ng-v8r" kind="relationship" relationship="viewControllers" id="qjl-rf-UQe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPE-UA-7Ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2937.68115942029" y="75"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="adI-5O-7J4">
+            <objects>
+                <viewController id="Inz-ng-v8r" customClass="CartViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oGn-CB-c5V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-DD-76W">
+                                <rect key="frame" x="361" y="79" width="43" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteAllProducts:" destination="Inz-ng-v8r" eventType="touchUpInside" id="rVR-xx-pqA"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-sB-7Rn">
+                                <rect key="frame" x="10" y="120" width="394" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="MMC-Bo-ZqY"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-Bw-BGT">
+                                <rect key="frame" x="362" y="750" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="0fc-Bh-JVA">
+                                <rect key="frame" x="10" y="426" width="394" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your cart is empty." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B70-p8-uuY">
+                                        <rect key="frame" x="0.0" y="8" width="386" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sZC-zc-xXf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iUq-sB-7Rn" firstAttribute="top" secondItem="jcF-DD-76W" secondAttribute="bottom" constant="10" id="6E2-J5-8F8"/>
+                            <constraint firstItem="iUq-sB-7Rn" firstAttribute="leading" secondItem="sZC-zc-xXf" secondAttribute="leading" constant="10" id="M3P-dq-Lfb"/>
+                            <constraint firstItem="jcF-DD-76W" firstAttribute="top" secondItem="sZC-zc-xXf" secondAttribute="top" constant="35" id="S2v-jH-9Wl"/>
+                            <constraint firstItem="iUq-sB-7Rn" firstAttribute="top" secondItem="sZC-zc-xXf" secondAttribute="top" constant="76" id="SFB-xe-PPh"/>
+                            <constraint firstItem="sZC-zc-xXf" firstAttribute="trailing" secondItem="4e2-Bw-BGT" secondAttribute="trailing" constant="10" id="Ut1-OE-e2V"/>
+                            <constraint firstItem="sZC-zc-xXf" firstAttribute="trailing" secondItem="jcF-DD-76W" secondAttribute="trailing" constant="10" id="awA-PA-IRn"/>
+                            <constraint firstItem="sZC-zc-xXf" firstAttribute="trailing" secondItem="iUq-sB-7Rn" secondAttribute="trailing" constant="10" id="iLt-qF-Yxw"/>
+                            <constraint firstItem="4e2-Bw-BGT" firstAttribute="top" secondItem="iUq-sB-7Rn" secondAttribute="bottom" constant="30" id="xxw-Ln-7M5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" selectedImage="cart" id="S4V-Bb-LoP"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="iUq-sB-7Rn" id="RVF-NK-Q1H"/>
+                        <outlet property="deleteButtonOutlet" destination="jcF-DD-76W" id="xUv-Lg-sdB"/>
+                        <outlet property="emptyStateView" destination="0fc-Bh-JVA" id="ngN-Yf-4eu"/>
+                        <outlet property="totalPriceLabel" destination="4e2-Bw-BGT" id="AUf-Y3-1zS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xk-iP-WFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2937.68115942029" y="879.91071428571422"/>
         </scene>
         <!--  -->
         <scene sceneID="FAv-Zc-78j">
@@ -425,7 +497,7 @@
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ADD TO CART">
-                                            <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="addToCart:" destination="pLL-eM-nrF" eventType="touchUpInside" id="wAx-sP-Egd"/>
@@ -477,6 +549,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <image name="trolley" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

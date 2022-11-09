@@ -55,6 +55,13 @@
 		316F0B2429188E370082B376 /* DetailProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B2329188E360082B376 /* DetailProductPresenter.swift */; };
 		316F0B2629188E3A0082B376 /* DetailProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F0B2529188E3A0082B376 /* DetailProductRouter.swift */; };
 		31DF46A0291AB6D500683128 /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF469F291AB6D400683128 /* DetailEntity.swift */; };
+		31DF46A3291B725100683128 /* CartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46A2291B725100683128 /* CartContract.swift */; };
+		31DF46A5291B727000683128 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46A4291B727000683128 /* CartPresenter.swift */; };
+		31DF46A7291B727200683128 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46A6291B727200683128 /* CartRouter.swift */; };
+		31DF46A9291B727400683128 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46A8291B727400683128 /* CartInteractor.swift */; };
+		31DF46AD291B72B900683128 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46AC291B72B900683128 /* CartViewController.swift */; };
+		31DF46B1291B72E000683128 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF46AF291B72E000683128 /* CartTableViewCell.swift */; };
+		31DF46B2291B72E000683128 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DF46B0291B72E000683128 /* CartTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +110,13 @@
 		316F0B2329188E360082B376 /* DetailProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductPresenter.swift; sourceTree = "<group>"; };
 		316F0B2529188E3A0082B376 /* DetailProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductRouter.swift; sourceTree = "<group>"; };
 		31DF469F291AB6D400683128 /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
+		31DF46A2291B725100683128 /* CartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartContract.swift; sourceTree = "<group>"; };
+		31DF46A4291B727000683128 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		31DF46A6291B727200683128 /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		31DF46A8291B727400683128 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		31DF46AC291B72B900683128 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		31DF46AF291B72E000683128 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		31DF46B0291B72E000683128 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +171,7 @@
 		311FC39D2915A4A70044ACF4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				31DF46A1291B691000683128 /* Cart */,
 				316F0B1C291889280082B376 /* DetailProduct */,
 				316F0AFB29186D610082B376 /* Home */,
 				316F0AD2291853130082B376 /* Login */,
@@ -293,6 +308,28 @@
 			path = DetailEntity;
 			sourceTree = "<group>";
 		};
+		31DF46A1291B691000683128 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				31DF46AE291B72C300683128 /* Cell */,
+				31DF46A4291B727000683128 /* CartPresenter.swift */,
+				31DF46A6291B727200683128 /* CartRouter.swift */,
+				31DF46A8291B727400683128 /* CartInteractor.swift */,
+				31DF46A2291B725100683128 /* CartContract.swift */,
+				31DF46AC291B72B900683128 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		31DF46AE291B72C300683128 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				31DF46AF291B72E000683128 /* CartTableViewCell.swift */,
+				31DF46B0291B72E000683128 /* CartTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +402,7 @@
 			files = (
 				311FC3962915742E0044ACF4 /* LaunchScreen.storyboard in Resources */,
 				316F0B0E29186EF10082B376 /* HomeCollectionViewCell.xib in Resources */,
+				31DF46B2291B72E000683128 /* CartTableViewCell.xib in Resources */,
 				311FC3932915742E0044ACF4 /* Assets.xcassets in Resources */,
 				316F0AEA291862500082B376 /* GoogleService-Info.plist in Resources */,
 				311FC3912915742B0044ACF4 /* Main.storyboard in Resources */,
@@ -380,24 +418,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				316F0B2229188E350082B376 /* DetailProductInteractor.swift in Sources */,
+				31DF46A7291B727200683128 /* CartRouter.swift in Sources */,
 				316F0B0D29186EF10082B376 /* HomeCollectionViewCell.swift in Sources */,
 				316F0AD4291857690082B376 /* SignInViewController.swift in Sources */,
 				316F0B16291879AB0082B376 /* UIView+Ext.swift in Sources */,
 				311FC3A62915AD170044ACF4 /* OnboardingContract.swift in Sources */,
 				311FC3A82915AD170044ACF4 /* OnboardingRouter.swift in Sources */,
+				31DF46B1291B72E000683128 /* CartTableViewCell.swift in Sources */,
 				316F0B0629186DCF0082B376 /* HomeRouter.swift in Sources */,
 				316F0B0029186DC30082B376 /* HomeInteractor.swift in Sources */,
 				316F0AED291862FE0082B376 /* UIButton+Ext.swift in Sources */,
+				31DF46A9291B727400683128 /* CartInteractor.swift in Sources */,
 				316F0AF4291868230082B376 /* SignUpInteractor.swift in Sources */,
 				316F0ADA2918582A0082B376 /* SignInRouter.swift in Sources */,
 				316F0AFD29186DAD0082B376 /* HomeViewController.swift in Sources */,
 				316F0B0929186E150082B376 /* HomeEntity.swift in Sources */,
 				316F0AF0291867F90082B376 /* SignUpViewController.swift in Sources */,
+				31DF46AD291B72B900683128 /* CartViewController.swift in Sources */,
 				316F0B1E29188BAE0082B376 /* DetailProductViewController.swift in Sources */,
 				316F0B2029188E2D0082B376 /* DetailProductContract.swift in Sources */,
 				316F0ADC2918582C0082B376 /* SignInInteractor.swift in Sources */,
 				311FC38E2915742B0044ACF4 /* ViewController.swift in Sources */,
 				311FC3B22916B2570044ACF4 /* OnboardingEntity.swift in Sources */,
+				31DF46A3291B725100683128 /* CartContract.swift in Sources */,
 				316F0AFA291869610082B376 /* String+Ext.swift in Sources */,
 				316F0B0429186DCD0082B376 /* HomeContract.swift in Sources */,
 				316F0AF22918680A0082B376 /* SignUpContract.swift in Sources */,
@@ -408,6 +451,7 @@
 				311FC3A92915AD170044ACF4 /* OnboardingViewController.swift in Sources */,
 				316F0B0229186DCB0082B376 /* HomePresenter.swift in Sources */,
 				316F0AF6291868250082B376 /* SignUpPresenter.swift in Sources */,
+				31DF46A5291B727000683128 /* CartPresenter.swift in Sources */,
 				316F0B2629188E3A0082B376 /* DetailProductRouter.swift in Sources */,
 				316F0ADE291858320082B376 /* SignInPresenter.swift in Sources */,
 				311FC38A2915742B0044ACF4 /* AppDelegate.swift in Sources */,
