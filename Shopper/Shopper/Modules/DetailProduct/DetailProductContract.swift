@@ -10,11 +10,11 @@ import Foundation
 protocol ViewToPresenterDetailProtocol {
     var detailInteractor: PresenterToInteractorDetailProtocol? {get set}
     
-    func addFood(product: Product, count: Int, username: String)
+    func addFood(product: Detail, username: String)
 }
 
 protocol PresenterToInteractorDetailProtocol {
-    func addToBasket(product: Product, count: Int, username: String)
+    func addToBasket(product: Detail, username: String)
 }
 
 protocol PresenterToRouterDetailProtocol {
