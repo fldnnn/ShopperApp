@@ -10,7 +10,7 @@ import Foundation
 protocol ViewToPresenterDetailProtocol {
     var detailInteractor: PresenterToInteractorDetailProtocol? {get set}
     
-    func addFood(product: Detail, username: String)
+    func addProduct(product: Detail, username: String)
 }
 
 protocol PresenterToInteractorDetailProtocol {

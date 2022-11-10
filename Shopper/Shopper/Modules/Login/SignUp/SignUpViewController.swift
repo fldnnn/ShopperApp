@@ -36,7 +36,7 @@ class SignUpViewController: UIViewController {
             } else {
                 signUpPresenter?.onSignUpButtonPressed(email: email, password: password)
                 UserDefaults.standard.set(firstNameTf.text, forKey: "username")
-                UserDefaults.standard.set(false, forKey: "status")
+                UserDefaults.standard.set("false", forKey: "status")
                 self.dismiss(animated: true)
             }
         }

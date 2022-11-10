@@ -50,6 +50,7 @@ class OnboardingViewController: UIViewController {
             viewController!.modalPresentationStyle = .fullScreen
             viewController!.modalTransitionStyle = .flipHorizontal
             present(viewController!, animated: true, completion: nil)
+            UserDefaults.standard.set("onboarding", forKey: "status")
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)

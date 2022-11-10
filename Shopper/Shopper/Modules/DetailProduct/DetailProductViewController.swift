@@ -65,7 +65,7 @@ class DetailProductViewController: UIViewController {
         }
         
         if let detail = detail {
-            detailPresenterObject?.addFood(product: detail, username: kullaniciAdi)
+            detailPresenterObject?.addProduct(product: detail, username: kullaniciAdi)
         }
     }
 }

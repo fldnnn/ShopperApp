@@ -38,7 +38,7 @@ class CartInteractor: PresenterToInteractorCartProtocol {
     }
     }
     
-    func deleteFood(productDoc: String, deleteFinished: @escaping () -> ()) {
+    func deleteProduct(productDoc: String, deleteFinished: @escaping () -> ()) {
         db.collection("\(userId)").document(productDoc).delete() { err in
             if let err = err {
                 print("Error removing document: \(err)")
@@ -50,7 +50,7 @@ class CartInteractor: PresenterToInteractorCartProtocol {
         }
     }
     
-    func increaseFoodCount(product: Detail) {
+    func increaseProductCount(product: Detail) {
         
             let newCount = product.count! + 1
             self.db.collection("\(self.userId)").document(product.docId!).updateData([
@@ -65,7 +65,7 @@ class CartInteractor: PresenterToInteractorCartProtocol {
             }
     }
     
-    func decreaseFoodCount(product: Detail) {
+    func decreaseProductCount(product: Detail) {
         let newCount = product.count! - 1
         if newCount > 0 {
             self.db.collection("\(self.userId)").document(product.docId!).updateData([

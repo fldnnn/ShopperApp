@@ -10,19 +10,20 @@ import UIKit
 
 class Switcher {
     static func updateRootVC(){
-        let status = UserDefaults.standard.bool(forKey: "status")
+        let status = UserDefaults.standard.string(forKey: "status")
 
-        print(status)
         if let sceneDeleagate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate,
                 let window = sceneDeleagate.window {
-            if status == true {
+            if status == "true" {
                 let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as! UITabBarController
                 window.rootViewController = rootVC
-            } else {
+            } else if status == "false"{
                 let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginVC")
                 window.rootViewController = rootVC
+            } else {
+                let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Onboarding")
+                window.rootViewController = rootVC
             }
-            
         }
     }
 }

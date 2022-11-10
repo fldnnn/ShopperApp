@@ -13,9 +13,9 @@ protocol ViewToPresenterCartProtocol {
     var view: PresenterToViewCartProtocol? { get set }
     
     func getAllCartItems()
-    func deleteFood(productDoc: String)
-    func increaseFoodCount(product: Detail)
-    func decreaseFoodCount(product: Detail)
+    func deleteProduct(productDoc: String)
+    func increaseProductCount(product: Detail)
+    func decreaseProductCount(product: Detail)
 }
 
 
@@ -24,9 +24,9 @@ protocol PresenterToInteractorCartProtocol {
     var presenter: InteractorToPresenterCartProtocol? { get set }
 
     func getAllCartItems()
-    func deleteFood(productDoc: String, deleteFinished: @escaping ()->())
-    func increaseFoodCount(product: Detail)
-    func decreaseFoodCount(product: Detail)
+    func deleteProduct(productDoc: String, deleteFinished: @escaping ()->())
+    func increaseProductCount(product: Detail)
+    func decreaseProductCount(product: Detail)
 }
 
 protocol InteractorToPresenterCartProtocol {

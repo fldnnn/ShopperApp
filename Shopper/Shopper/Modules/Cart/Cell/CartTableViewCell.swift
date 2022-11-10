@@ -9,8 +9,8 @@ import UIKit
 import Kingfisher
 
 protocol CellDelegate {
-    func increaseFoodCount(indexPath: IndexPath)
-    func decreaseFoodCount(indexPath: IndexPath)
+    func increaseProductCount(indexPath: IndexPath)
+    func decreaseProductCount(indexPath: IndexPath)
 
 }
 
@@ -54,10 +54,10 @@ class CartTableViewCell: UITableViewCell {
     
     
     @IBAction func increaseCount(_ sender: Any) {
-        cellDelegate!.increaseFoodCount(indexPath: indexPath! )
+        cellDelegate!.increaseProductCount(indexPath: indexPath! )
     }
     
     @IBAction func decreaseButton(_ sender: Any) {
-        cellDelegate!.decreaseFoodCount(indexPath: indexPath! )
+        cellDelegate!.decreaseProductCount(indexPath: indexPath! )
     }    
 }

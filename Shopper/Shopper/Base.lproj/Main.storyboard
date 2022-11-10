@@ -551,7 +551,7 @@
         <!--Profil-->
         <scene sceneID="IUN-TC-2fu">
             <objects>
-                <viewController id="TnS-hu-xhL" customClass="ProfileViewController" customModule="FoodBreak" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TnS-hu-xhL" customClass="ProfileViewController" customModule="Shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqd-1h-GHd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

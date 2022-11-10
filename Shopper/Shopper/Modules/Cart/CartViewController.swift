@@ -40,7 +40,7 @@ class CartViewController: UIViewController {
         
         let deleteAction = UIAlertAction(title: "Yes", style: .destructive) { [weak self] action in
             for item in (self?.cartProductList)! {
-                self?.presenter?.deleteFood(productDoc: item.docId!)
+                self?.presenter?.deleteProduct(productDoc: item.docId!)
             }
         }
         alert.addAction(deleteAction)
@@ -94,7 +94,7 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){ action in }
             let yesAction = UIAlertAction(title: "Yes", style: .destructive){ action in
                 
-                self.presenter?.deleteFood(productDoc: product.docId!)
+                self.presenter?.deleteProduct(productDoc: product.docId!)
             }
             
             alert.addAction(cancelAction)
@@ -128,11 +128,11 @@ extension CartViewController: PresenterToViewCartProtocol {
 }
 
 extension CartViewController: CellDelegate {
-    func increaseFoodCount(indexPath: IndexPath) {
-        presenter?.increaseFoodCount(product: cartProductList[indexPath.row])
+    func increaseProductCount(indexPath: IndexPath) {
+        presenter?.increaseProductCount(product: cartProductList[indexPath.row])
     }
     
-    func decreaseFoodCount(indexPath: IndexPath) {
-        presenter?.decreaseFoodCount(product: cartProductList[indexPath.row])
+    func decreaseProductCount(indexPath: IndexPath) {
+        presenter?.decreaseProductCount(product: cartProductList[indexPath.row])
     }
 }

@@ -15,18 +15,18 @@ class CartPresenter: ViewToPresenterCartProtocol {
         interactor?.getAllCartItems()
     }
     
-    func deleteFood(productDoc: String) {
-        interactor?.deleteFood(productDoc: productDoc) {
+    func deleteProduct(productDoc: String) {
+        interactor?.deleteProduct(productDoc: productDoc) {
             self.interactor?.getAllCartItems()
         }
     }
     
-    func increaseFoodCount(product: Detail) {
-        interactor?.increaseFoodCount(product: product)
+    func increaseProductCount(product: Detail) {
+        interactor?.increaseProductCount(product: product)
     }
     
-    func decreaseFoodCount(product: Detail) {
-        interactor?.decreaseFoodCount(product: product)
+    func decreaseProductCount(product: Detail) {
+        interactor?.decreaseProductCount(product: product)
     }
 }
 
